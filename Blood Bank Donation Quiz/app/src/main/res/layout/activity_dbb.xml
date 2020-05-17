@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/next1"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/place"
+            android:scaleType="centerCrop"
+            android:layout_below="@+id/blood"
+            android:layout_above="@+id/contact"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Damietta Blood Bank"
+            android:textColor="@android:color/holo_red_dark"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:id="@+id/bank"
+            />
+        <ImageView
+
+            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/bank"
+            android:src="@drawable/blood"
+            android:id="@+id/blood"
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What we do ?
+        - Blood Donation
+        - Blood issue
+        - Blood Storing
+        We are at your service 24/7 :) "
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/blood"
+            android:padding="20dp"
+            android:id="@+id/service"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/service"
+            android:text="Contact Us : "
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:padding="20dp"
+            android:id="@+id/contact"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:layout_below="@+id/contact"
+            android:id="@+id/info"
+            >
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/contact"
+                >
+                <ImageView
+                    android:id="@+id/phone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/phone"
+                    android:padding="5dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02-0102 034 7731"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:textSize="30sp"
+                    android:padding="5dp"
+                    android:id="@+id/mobile"
+                    />
+            </LinearLayout>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/contact"
+                >
+                <ImageView
+                    android:id="@+id/location"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/location"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General hospital in Damietta ,Behind the governorate building, Egypt"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:id="@+id/addressr"
+                    />
+            </LinearLayout>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/contact"
+                >
+                <ImageView
+                    android:id="@+id/email"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/email2"
+                    android:padding="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="bloodbank_damietta@yahoo.com"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:id="@+id/email2"
+
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:layout_below="@+id/info"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donation Quiz"
+                android:id="@+id/quiz"
+                android:textColor="#d80000"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:padding="20dp"
+
+
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Name"
+                android:inputType="textMultiLine"
+                android:id="@+id/Name">
+
+            </EditText>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is your age ?"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/group1"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="less than 18"
+                    android:id="@+id/radio_1"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18 - 65"
+                    android:id="@+id/radio2"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="more than 65"
+                    android:id="@+id/radio3"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="When was the last time you donated  ?"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/group11"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="I never donated before"
+                    android:id="@+id/radio11"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1-3 months ago"
+                    android:id="@+id/radio12"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More than 3 months ago"
+                    android:id="@+id/radio13"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is your blood group ?"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/group2"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O ; AB"
+                    android:id="@+id/radio21"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O- ; AB-"
+                    android:id="@+id/radio22"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O+ ; AB+"
+                    android:id="@+id/radio23"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" O- ; AB+"
+                    android:id="@+id/radio24"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="O+ ; AB-"
+                    android:id="@+id/radio25"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you diabetic ?"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/group3"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radio31"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radio32"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do you use any Drugs ?"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/group4"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radio41"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radio42"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Did you visit dintist lately ?"/>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/group5"
+
+                >
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yes"
+                    android:id="@+id/radio51"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No"
+                    android:id="@+id/radio52"
+                    android:buttonTint="#d80000"
+                    android:textSize="10sp"
+
+
+
+                    />
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check the box if you're suffering from :"/>
+            <CheckBox
+                android:id="@+id/radio61"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Convulsions"
+                />
+            <CheckBox
+                android:id="@+id/radio62"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="Loss of consiosness"
+                />
+            <CheckBox
+                android:id="@+id/radio63"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="psychological depression"
+                />
+            <CheckBox
+                android:id="@+id/radio64"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="None of the above"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are you suffering from hypertension ?"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="please Caplitalize your Answer!"
+                android:inputType="textMultiLine"
+                android:id="@+id/radio7"
+                android:textSize="10sp"
+                >
+
+            </EditText>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:layout_marginTop="16dp"
+                android:onClick="submitQuiz"
+
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
